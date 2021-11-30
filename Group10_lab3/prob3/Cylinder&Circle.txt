@@ -1,0 +1,3 @@
+- The inheritance relationship between Circle and Cylinder classes doesn't make sense, because
+	• It violates the IS-A relation (we say cylinder has a circle instead of cylinder is a circle)
+        • Also violates the Liskov Substitution Property because we can’t have a circle instance when a cylinder instance is expected.

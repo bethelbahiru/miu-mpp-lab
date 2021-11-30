@@ -1,0 +1,27 @@
+First we know that       
+        p1 is instanceOf PersonWithJob and Person 
+        p2 is instanceOf Person
+        
+
+    because of polymorphism
+        System.out.println("p1.equals(p2)? " + p1.equals(p2));
+            calls for equals method inside PersonWithJob
+                which checks 
+                    p2 == null  --> not null
+                    p2 isnot instanceOf PersonWithJob --> it isn't --> return false
+
+
+        and 
+		System.out.println("p2.equals(p1)? " + p2.equals(p1));
+            calls for equals method inside Person
+                which checks 
+                    p1 == null --> not null
+                    p1 isn't instanceOf Person --> is instanceOf Person
+                    p2.name == p1.name ---> YES
+                    returns True
+
+Generally the reason this is happening is 
+    because of polymorphism each object is calling different methods and 
+    each object is instanceOf PersonWithJob or isn't 
+
+
