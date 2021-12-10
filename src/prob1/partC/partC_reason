@@ -1,0 +1,3 @@
+The problem here is due to the absence of hashcode method in employee class.
+In line number 20, when !tracker.contains(e) is called it returns false because the default implementation of public int hashCode() returns distinct integers for distinct objects. 
+So the default implementation will return two different integers for two same employees! I overridden the default hashcode implementation to fix this.

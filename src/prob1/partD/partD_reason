@@ -1,0 +1,2 @@
+The problem in this code was the usage of set visited attribute. This attribute modifies the values in the hashmap leading them to be incorrect.
+incorrect. The solution for this problem is making the Employee class immutable. 

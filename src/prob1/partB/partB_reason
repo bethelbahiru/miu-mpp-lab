@@ -1,0 +1,2 @@
+The reason why it was giving false was that the equals method wasn't being properly overridden in the Employee class. Therefore,
+when the listsAreEqual method checks equality, it uses the original Object implementation of equals, which gives incorrect results here.
